@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>intro.js example</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="introJs().start()">
+    <div class="container">
+        <nav data-step="1" data-intro="This is the main menu.">
+            <ul>
+                <li>Home</li>
+                <li>Link 1</li>
+                <li>Link 2</li>
+                <li>Link 3</li>
+                <li>Link 4</li>
+                <li>Link 5</li>
+            </ul>
+        </nav>
+        <div class="leftside" data-step="2" data-intro="This is the side menu.">
+            <ul>
+                <li>Side link 1</li>
+                <li>Side link 2</li>
+                <li>Side link 3</li>
+                <li>Side link 4</li>
+                <li>Side link 5</li>
+                <li>Side link 6</li>
+            </ul>
+        </div>
+        <div class="content">
+            <p data-step="3" data-intro="This is the first paragraph.">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat, ex vel luctus egestas, purus ex congue felis, vel tincidunt diam magna nec metus. Quisque interdum ante et luctus sollicitudin. Fusce feugiat, lacus quis euismod tempor, sem sapien cursus ex, tempor rutrum nisi arcu sed quam. Proin fermentum, risus ac tempus vestibulum, eros eros varius sapien, id laoreet justo metus eu eros. Morbi accumsan tempor est sed rutrum. In mattis eleifend orci et gravida. Donec quis nunc at dui eleifend pharetra. Quisque tempus, ex id ullamcorper pretium, quam odio blandit dui, et eleifend nisi urna vitae urna. Fusce consequat massa at nisl fermentum mollis. Cras arcu urna, ultricies eu euismod ac, eleifend eu lorem. Aliquam dapibus commodo nisl eu pharetra. Praesent ac nunc arcu.</p>
+            <p data-step="4" data-intro="This is the second paragraph.">Nam a leo arcu. Phasellus semper interdum massa at volutpat. Donec iaculis, augue nec suscipit tincidunt, leo magna bibendum dui, eget volutpat tortor purus eget sapien. Sed bibendum placerat eros ut sollicitudin. Pellentesque blandit ligula at orci eleifend consequat. Vestibulum in ipsum nec mi finibus feugiat a vel dolor. Aliquam mattis tortor quis leo dapibus, ac blandit libero consectetur. Ut et malesuada sapien.</p>
+            <p data-step="5" data-intro="This is the third paragraph.">Fusce urna ligula, rutrum dignissim rutrum id, suscipit sed odio. Nullam dui nisi, placerat sit amet malesuada et, sollicitudin id elit. Sed leo mauris, sodales at felis ac, iaculis sodales orci. Nam congue interdum turpis ut finibus. Etiam sit amet porta tellus, eget feugiat massa. Donec congue laoreet velit sit amet fermentum. Fusce dictum ex est, in finibus eros laoreet vel.</p>
+
+            <a class="btn btn-large btn-success" href="javascript:void(0);" onclick="javascript:introJs().start();">Restart joyride</a>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
